@@ -25,7 +25,7 @@ function getUserInfo() {
 }
 
 function renderAvatar(data) {
-    var name = data.nickanem || data.username
+    var name = data.nickname || data.username
     $('#welcome').html(`欢迎 ${name}`)
     if (data.user_pic !== null) {
         $('.layui-nav-img').attr('src', data.user_pic).show()
